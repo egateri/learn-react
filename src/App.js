@@ -4,22 +4,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <h1>Welcome to my website:</h1>
+
+    <p>Login:</p>
+    <form action ="/" method="" autoComplete='off' target="">
+      <input type ="email" placeholder = "email" required /> <br/>
+      <input type ="password" placeholder = "password" required /><br/>
+      <button type ="submit">Submit</button>
+    </form>
+
     </div>
   );
+  
+
 }
 
 export default App;
