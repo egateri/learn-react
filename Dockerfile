@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 
-CMD [ "npx", "serve" ]
+CMD [ "npm", "serve" ]
 
 # Build the app
 #  docker build -t node-web-app .
