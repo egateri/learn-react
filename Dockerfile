@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install
+RUN npm install && npm install -g serve
 # If you are building your code for production
  #RUN npm ci --omit=dev
 
@@ -18,8 +18,6 @@ RUN npm install
 COPY . .
 
 RUN npm run build
-
-RUN npm install -g serve
 
 CMD [ "serve", "-s", "build" ]
 
