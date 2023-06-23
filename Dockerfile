@@ -10,7 +10,9 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+RUN npm install -g npm@9.7.2
 RUN npm install
+
 # If you are building your code for production
  #RUN npm ci --omit=dev
 
