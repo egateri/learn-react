@@ -19,8 +19,9 @@ COPY . .
 
 RUN npm run build
 
+RUN npm install -g serve
 
-CMD [ "npm", "run", "serve" ]
+CMD [ "serve", "-s", "build" ]
 
 # Build the app
 #  docker build -t node-web-app .
